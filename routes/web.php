@@ -24,4 +24,4 @@ Route::get('/shop', 'ShopController@index');
 
 Route::get('/cart', 'CartController@index');
 
-Route::get('/shop/detail', 'ShopController@show');
+Route::get('/shop/detail/{id}', 'ShopController@show');
