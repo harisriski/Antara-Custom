@@ -25,3 +25,5 @@ Route::get('/shop', 'ShopController@index');
 Route::get('/cart', 'CartController@index');
 
 Route::get('/shop/detail/{id}', 'ShopController@show');
+
+Route::get('/shop/category/{id}', 'ShopController@category');

@@ -16,9 +16,10 @@
         <div class="category">
           <h2 id="category-label">Categories</h2>
           <ul class="list-group">
-            <li class="list-group-item active">All</li>
-            <li class="list-group-item"> <a href="">Pria</a></li>
-            <li class="list-group-item"> <a href="">Wanita</a></li>
+            <li class="list-group-item"><a href="/shop">All</a></li>
+            @foreach ($categories as $category)
+              <li class="list-group-item {{$category->id == $id ? 'active' : ''}}"><a href="/shop/category/{{$category->id}}">{{$category->name}}</a></li>
+            @endforeach
           </ul>
         </div>
         <h2 id="category-label" class="text-center mt-5">Search Product</h2>
