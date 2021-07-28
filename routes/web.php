@@ -27,3 +27,7 @@ Route::get('/cart', 'CartController@index');
 Route::get('/shop/detail/{id}', 'ShopController@show');
 
 Route::get('/shop/category/{id}', 'ShopController@category');
+
+Route::post('/cart/store', 'CartController@store');
+
+Route::patch('/cart/{id}', 'CartController@update');

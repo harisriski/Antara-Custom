@@ -26,9 +26,9 @@
       <div class="kartu">
         <p>Harga</p>
         <h2>Rp {{number_format($product->price)}}</h2>
-        <form action="" method="POST">
+        <form action="/cart/store" method="POST">
         @csrf
-        <input type="hidden" value="" name="item_id">
+        <input type="hidden" value="{{$product->id}}" name="product_id">
         <input type="submit" class="btn btn-primary" value="Add to Cart">
     </form>
       </div>
