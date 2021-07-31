@@ -85,7 +85,7 @@
 </div>
 </div>
 
-<form action="" method="POST" style="margin-left: 700px;">
+<form action="/checkout" method="POST" style="margin-left: 700px;">
 @csrf
 <button type="submit" class="btn btn-primary">Checkout</button>
 </form>
